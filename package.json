@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "chrome": "cypress run --browser chrome --headless",
+    "edge": "cypress run --browser edge --headless",
+    "open": "cypress open",
+    "open-video": "cypress open --env video=true",
+    "format": "prettier --write \"cypress/**/*.js\"",
+    "prepare": "husky cypress",
+    "pre-commit": "husky add .husky/pre-commit \"npx prettier --write .\"",
+    "sprint9": "cypress run --spec \"cypress/integration/sprint9/**/*\" --browser chrome"
+  },
+  "devDependencies": {
+    "cypress": "^13.13.3",
+    "cypress-file-upload": "^5.0.8",
+    "eslint": "^9.9.1",
+    "eslint-plugin-cypress": "^3.5.0",
+    "husky": "^9.1.5"
+  }
+}
